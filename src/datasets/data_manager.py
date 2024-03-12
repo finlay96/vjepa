@@ -66,7 +66,7 @@ def init_data(
             subset_file=subset_file)
 
     elif data.lower() == 'videodataset':
-        from src.datasets.video_dataset import make_videodataset
+        from downstream_task.third_party.vjepa.src.datasets.video_dataset import make_videodataset
         dataset, data_loader, dist_sampler = make_videodataset(
             data_paths=root_path,
             batch_size=batch_size,
